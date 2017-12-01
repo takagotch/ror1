@@ -1,0 +1,21 @@
+<DCTYPE html>
+<html>
+  <title><%= document_title %></title>
+  <%= style_sheet_link_tag "application", media: "all", "data-turbolinks-track" => true%>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_mata_tags %>
+  </head>
+  <body>
+    <div id="wrapper">
+      <%= render 'shared/header'%>
+      <div id="container">
+  <%= yeild %>
+      </div>
+    <%= render 'shared/footer' %>
+  </div>
+</body>
+</html>
+
+
+
+
